@@ -6,7 +6,7 @@
     "plugins": [
         {
             "name": "language-agnostic-agent-setup",
-            "source": ".",
+            "source": "./",
             "description": "Agent-agnostic baseline rules: minimal-change principle, Conventional Commits, documentation conventions, and Context7 MCP guidance for library lookups."
         }
     ]
