@@ -1,0 +1,16 @@
+{
+    "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+    "name": "language-agnostic-agent-setup",
+    "description": "Agent-agnostic baseline rules: minimal-change principle, Conventional Commits, documentation conventions, and Context7 MCP guidance for library lookups.",
+    "author": {
+        "name": "Dominik Rehse"
+    },
+    "homepage": "https://github.com/dominik-rehse/language-agnostic-agent-setup",
+    "repository": "https://github.com/dominik-rehse/language-agnostic-agent-setup",
+    "license": "MIT",
+    "keywords": [
+        "rules",
+        "conventions",
+        "agents"
+    ]
+}
