@@ -1,14 +1,14 @@
 ---
-description: Vendor language-agnostic-agent-setup into the current project. Copies rules to .claude/rules/*.md (and optionally .cursor/rules/*.mdc with --cursor or --both). Invoke with /language-agnostic-agent-setup:setup.
-argument-hint: "[--cursor | --both]"
+description: Vendor language-agnostic-agent-setup into the current project. Copies rules to .claude/rules/*.md (and optionally .cursor/rules/*.mdc with --cursor or --both). Invoke with /language-agnostic-agent-setup:setup. Supports --check (read-only drift detection) and --force (overwrite existing files) for re-runs after upstream updates.
+argument-hint: "[--cursor | --both] [--check | --force]"
 disable-model-invocation: true
 ---
 
 # /language-agnostic-agent-setup:setup — Vendor rules into the current project
 
-Run once per project. This is the only install path — there is no SessionStart auto-mirror, so the rules only land in the project after this command runs and they're tracked in source control like any other file.
+Run once per project to install. Re-run with `--check` to detect upstream updates, or with `--force` to pull them in. The rules land in source control like any other file.
 
-Safe to re-run; existing files are not overwritten.
+By default the installer is write-only-if-absent: re-running after a plugin update is a no-op on every file that already exists. Use the modes below to deal with updates.
 
 ## Task
 
@@ -18,7 +18,17 @@ Run the installer that ships with the plugin:
 bash "${CLAUDE_PLUGIN_ROOT}/scripts/install.sh" $ARGUMENTS
 ```
 
-Pass `--claude`, `--cursor`, or `--both` to choose which targets get installed. The default (no flag) installs both.
+Target flags (orthogonal to mode):
+
+- `--claude` — install Claude Code project-local rules only.
+- `--cursor` — install Cursor project-local rules only.
+- `--both` — install both. Default if no target flag is given.
+
+Mode flags (mutually exclusive):
+
+- _default_ — write only files that are absent; never clobber existing.
+- `--check` — read-only diff. Reports `ok` / `miss` / `drift` per file. Exits 0 iff every file is byte-identical to upstream. Use from CI as a "rules in sync" guard.
+- `--force` — overwrite every file, even if it already exists. Destructive against local customisations. Run `--check` first to see what would change.
 
 After the script finishes, confirm with:
 
