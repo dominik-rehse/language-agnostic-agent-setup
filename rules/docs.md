@@ -11,3 +11,4 @@ alwaysApply: false
 - No redundant content such as `README.md` or `getting-started.md`.
 - Avoid excessive bold; prefer italics for emphasis.
 - In headlines or terminology, capitalize only the first letter.
+- Don't write Markdown tables whose cells are paragraphs. Pipe-table rows must live on one physical line, so prose-heavy cells produce unreadable source. Prefer a definition list, a bulleted sublist with a bold term, or short cells with the prose moved into paragraphs below the table.
