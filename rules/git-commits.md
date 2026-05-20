@@ -41,7 +41,7 @@ fix(api)!: change response format
 
 ## Constraints
 
-- Never stage or commit changes in Git yourself.
+- Meaningful atomic commits
 - Description: lowercase, no period, imperative mood ("add" not "added")
 - Scope: optional, use package/area name (e.g., `feat(web):`, `fix(database):`)
 - Keep first line under 72 chars
