@@ -6,7 +6,7 @@ alwaysApply: false
 # Documentation rules
 
 - Put all docs in `docs/`.
-- Make the docs DRY: refer instead of repeating.
+- Make the docs DRY: refer instead of repeating — within a document as much as between documents (e.g. no summary section recapping the document).
 - Don't use promotional language.
 - No redundant content such as `README.md` or `getting-started.md`.
 - Avoid excessive bold; prefer italics for emphasis.
