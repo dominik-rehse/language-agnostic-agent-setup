@@ -1,8 +1,3 @@
----
-description: Repo-wide defaults that always apply.
-alwaysApply: true
----
-
 # Core defaults
 
 - Make the smallest change that solves the request.

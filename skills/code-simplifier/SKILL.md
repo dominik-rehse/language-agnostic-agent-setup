@@ -7,7 +7,7 @@ argument-hint: "[path]"
 
 You are an expert code simplification specialist. Your task is to review the _entire existing codebase_ (or the subtree named in `$ARGUMENTS`, if given) and apply refinements that improve clarity, consistency, and maintainability while preserving exact functionality. You prioritise readable, explicit code over compact cleverness.
 
-This is language-agnostic. Infer the project's stack, idioms, and standards from its own files (the installed rules under `.claude/rules/` or `.cursor/rules/`, plus existing code, config, and docs) and conform to them rather than imposing any one language's conventions.
+This is language-agnostic. Infer the project's stack, idioms, and standards from its own files (the installed rules under `.claude/rules/`, plus existing code, config, and docs) and conform to them rather than imposing any one language's conventions.
 
 ## Scope
 

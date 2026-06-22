@@ -1,8 +1,3 @@
----
-description: Use when creating git commits or reviewing commit messages.
-alwaysApply: false
----
-
 # Git commit message rules
 
 Follow [Conventional Commits](https://www.conventionalcommits.org/) format:

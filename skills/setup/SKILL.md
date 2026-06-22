@@ -1,6 +1,6 @@
 ---
-description: Vendor language-agnostic-agent-setup into the current project. Copies rules to .claude/rules/*.md (and optionally .cursor/rules/*.mdc with --cursor or --both). Invoke with /language-agnostic-agent-setup:setup. Supports --check (read-only drift detection) and --force (overwrite existing files) for re-runs after upstream updates.
-argument-hint: "[--cursor | --both] [--check | --force]"
+description: Vendor language-agnostic-agent-setup into the current project. Copies rules to .claude/rules/*.md. Invoke with /language-agnostic-agent-setup:setup. Supports --check (read-only drift detection) and --force (overwrite existing files) for re-runs after upstream updates.
+argument-hint: "[--check | --force]"
 disable-model-invocation: true
 ---
 
@@ -17,12 +17,6 @@ Run the installer that ships with the plugin:
 ```bash
 bash "${CLAUDE_PLUGIN_ROOT}/scripts/install.sh" $ARGUMENTS
 ```
-
-Target flags (orthogonal to mode):
-
-- `--claude` — install Claude Code project-local rules only.
-- `--cursor` — install Cursor project-local rules only.
-- `--both` — install both. Default if no target flag is given.
 
 Mode flags (mutually exclusive):
 

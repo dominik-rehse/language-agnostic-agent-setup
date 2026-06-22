@@ -1,8 +1,3 @@
----
-description: Use when writing docs.
-alwaysApply: false
----
-
 # Documentation rules
 
 - Put all docs in `docs/`.

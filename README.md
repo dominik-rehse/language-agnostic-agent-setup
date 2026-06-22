@@ -1,29 +1,21 @@
 # language-agnostic-agent-setup
 
-Baseline rules for AI coding agents.
+Baseline rules for Claude Code.
 
-Each rule in `rules/` is a single Markdown file with Cursor frontmatter. The installer renames it to `.mdc` for Cursor and strips the frontmatter for Claude Code, so there's one source of truth per rule.
+Each rule in `rules/` is a single Markdown file. The installer copies it into a project's `.claude/rules/`, so there's one source of truth per rule.
 
 ## Install
-
-### Claude Code
 
 ```text
 /plugin marketplace add dominik-rehse/language-agnostic-agent-setup
 /plugin install language-agnostic-agent-setup@language-agnostic-agent-setup
 ```
 
-Then run `/language-agnostic-agent-setup:setup` — it runs `scripts/install.sh` in the current project.
-
-### Cursor
-
-Clone this repo, then run `scripts/install.sh` directly:
+Then run `/language-agnostic-agent-setup:setup` — it runs `scripts/install.sh` in the current project. You can also clone this repo and run the installer directly:
 
 ```bash
 bash path/to/language-agnostic-agent-setup/scripts/install.sh
 ```
-
-Pass `--claude` or `--cursor` to install only one target (default: both).
 
 ## Skills
 
@@ -44,4 +36,4 @@ bash path/to/install.sh --check         # what would change?
 bash path/to/install.sh --force         # pick up upstream
 ```
 
-The two modes are mutually exclusive. Target flags (`--claude` / `--cursor` / `--both`) work with all three modes.
+The two modes are mutually exclusive.
