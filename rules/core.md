@@ -1,5 +1,6 @@
 # Core defaults
 
+- Always work directly on the `main` branch. Never create or switch to a branch or git worktree unless the user explicitly asks for one.
 - Make the smallest change that solves the request.
 - Don't refactor unrelated code unless asked.
 - Prefer existing project patterns over introducing new ones.
