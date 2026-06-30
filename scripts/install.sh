@@ -10,8 +10,8 @@
 #               clobbers operator edits. Initial install is what this is for.
 #   --check     Dry-run. Report files that are absent or differ from upstream.
 #               No writes. Exits 0 iff every file is byte-identical to upstream
-#               (i.e. running --force would be a no-op). Use from CI to detect
-#               rule drift.
+#               (i.e. running --force would be a no-op). Run before --force to
+#               preview what it would change.
 #   --force     Overwrite every file, even if it already exists. Use after
 #               --check confirms the only drift is upstream-side updates the
 #               operator wants to pick up. Destructive if you've customised

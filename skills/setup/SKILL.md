@@ -21,7 +21,7 @@ bash "${CLAUDE_PLUGIN_ROOT}/scripts/install.sh" $ARGUMENTS
 Mode flags (mutually exclusive):
 
 - _default_ — write only files that are absent; never clobber existing.
-- `--check` — read-only diff. Reports `ok` / `miss` / `drift` per file. Exits 0 iff every file is byte-identical to upstream. Use from CI as a "rules in sync" guard.
+- `--check` — read-only diff. Reports `ok` / `miss` / `drift` per file. Exits 0 iff every file is byte-identical to upstream. Run it before `--force` to preview what would change.
 - `--force` — overwrite every file, even if it already exists. Destructive against local customisations. Run `--check` first to see what would change.
 
 After the script finishes, confirm with:

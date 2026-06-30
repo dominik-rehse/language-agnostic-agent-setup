@@ -28,7 +28,7 @@ The plugin ships slash commands that are not vendored into projects — they run
 
 The default install path is write-only-if-absent: it never clobbers a file you already have. After a plugin update, two extra modes pick up upstream changes:
 
-- `--check` — read-only diff. Prints `ok` / `miss` / `drift` per file and exits 0 iff every file is byte-identical to upstream. Wire into CI to catch silent drift.
+- `--check` — read-only diff. Prints `ok` / `miss` / `drift` per file and exits 0 iff every file is byte-identical to upstream. Run it before `--force` to preview what would change.
 - `--force` — overwrite every file, even if it exists. Destructive against local edits. Run `--check` first.
 
 ```bash
