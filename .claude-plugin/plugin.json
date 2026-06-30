@@ -1,7 +1,8 @@
 {
     "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
     "name": "language-agnostic-agent-setup",
-    "description": "Agent-agnostic baseline rules: minimal-change principle, Conventional Commits, documentation conventions, and Context7 MCP guidance for library lookups.",
+    "version": "0.1.0",
+    "description": "Language-agnostic baseline rules for Claude Code: minimal-change principle, Conventional Commits, documentation conventions, and Context7 MCP guidance for library lookups.",
     "author": {
         "name": "Dominik Rehse"
     },
