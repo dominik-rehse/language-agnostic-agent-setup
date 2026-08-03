@@ -7,7 +7,7 @@
         {
             "name": "language-agnostic-agent-setup",
             "source": "./",
-            "version": "0.2.0",
+            "version": "0.4.1",
             "description": "Language-agnostic baseline rules for Claude Code: minimal-change principle, Conventional Commits, documentation conventions, and Context7 MCP guidance for library lookups."
         }
     ]
