@@ -1,5 +1,7 @@
 # Documentation rules
 
+These cover technical documentation. Marketing copy, blog posts, and release announcements are a different genre — these rules don't apply there.
+
 - Put all docs in `docs/`.
 - Make the docs DRY: refer instead of repeating — within a document as much as between documents (e.g. no summary section recapping the document).
 - Don't use promotional language.
