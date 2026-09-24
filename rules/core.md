@@ -7,9 +7,9 @@
 - Avoid duplicated logic or overlapping responsibilities.
 - If requirements are unclear, ask 1–3 precise questions before coding.
 - When fixing bugs, run the required tests one final time before declaring victory.
-- Leave no traces of edits.
+- Write code comments and docs as if the code had always been this way; don't narrate your edits in them (e.g. "I just changed this", "now uses Z").
 - Apply MECE (Mutually Exclusive, Collectively Exhaustive) thinking when structuring problems or issues: ensure categories do not overlap and together fully cover the space.
 - Never commit files containing secrets, API keys, credentials, or PII (e.g., `.env`).
 - Ensure temporary debugging statements (like `console.log` or `print`) are removed before completing a task.
 - Follow 'fail fast' principles and ensure error messages are descriptive and actionable.
-- Be concise, avoid filler text or apologies, and focus purely on the technical solution.
+- Be concise and lead with the technical substance.
